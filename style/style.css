@@ -1,0 +1,81 @@
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.5;
+}
+
+.ul__example-link {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.li__example-lik {
+    margin-bottom: 10px;
+}
+
+.href__example--link {
+    text-decoration: none;
+    color: #007acc;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.href__example--link:hover,
+.href__example--link:focus {
+    color: #005a99;
+    outline: none;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.section_about,
+.section_skills,
+.section_example,
+.skills__level--actions {
+    margin-bottom: 25px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.skills__level--actions {
+    white-space: pre-line; 
+}
+
+.footer_contacts {
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Для мобильных — адаптивный текст и контейнер */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .header {
+        font-size: 2rem;
+    }
+
+    .section_about,
+    .section_skills,
+    .section_example,
+    .skills__level--actions {
+        font-size: 1rem;
+    }
+}
