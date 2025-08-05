@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta property="og:title" content="Портфолио веб-разработчика Наталья Захаровой">
+    <meta property="og:description" content="Сайты на HTML, CSS, JS, React, PHP. Примеры работ.">
+    <meta property="og:image" content="https://user49324809.github.io/твоя-картинка.jpg">
+    <meta property="og:url" content="https://user49324809.github.io/">
+    <meta property="og:type" content="website">
+    <title>Портфолио веб-разработчика Натальи Захаровой</title>
+    <meta name="description" content="Верстка, JavaScript, React, PHP, UX/UI. Примеры работ и контактная информация.">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="container">
         <header class="header">
-            Portfolio
+            <h1>Portfolio</h1>
+            <p class="summary">Fullstack разработчик | HTML, CSS, JS, PHP, React | Россия, удалёнка</p>
         </header>
         <main class="main_skills">
             <section class="section_about">Училась на программиста на крусах fullstack</section>
@@ -17,44 +25,51 @@
                 Овладела следующими навыками программирования: html, css, javascript, php,
                 react, angular, mysql, docker, figma, ux/ui, сео-копиратийнг
             </section>
-            <section class="section_example">
-                <ul class="ul__example-link">
-                    <li class="li__example-lik">    
-                        <a href="https://user49324809.github.io/cup_store/" class="href__example--link">
-                            React: 'Магазин чашек'
-                        </a>
-                    </li>
-                    <li class="li__example-lik">
-                        <a href="https://user49324809.github.io/bike_flowers/" class="href__example--link">
-                            React: 'Магазин цветов'
-                        </a>
-                    </li>
-                    <li class="li__example-lik">
-                        <a href="https://user49324809.github.io/wdb/" class="href__example--link">
-                            React: 'График исторических событий'
-                        </a>
-                    </li>
-                    <li class="li__example-lik">
-                        <a href="https://user49324809.github.io/wdb/" class="href__example--link">
-                            React: 'Расписание врачей'
-                        </a>
-                    </li>
-                    <li class="li__example-lik">
-                        <a href="https://user49324809.github.io/cours/" class="href__example--link">
-                            JavaScript: 'Курсы английского'
-                        </a>
-                    </li>
-                    <li class="li__example-lik">
-                        <a href="https://github.com/user49324809/cup_shop" class="href__example--link">
-                            PHP: 'Магазин кружек'
-                        </a>
-                    </li>
-                    <li class="li__example-lik">
-                        <a href="https://github.com/user49324809/bicycle/tree/master" class="href__example--link">
-                            PHP: 'Магазин велосипедов'
-                        </a>
-                    </li>
-                </ul>
+            <section class="section_example" id="projects">
+                <h2>Примеры проектов</h2>
+                <div class="projects_grid">
+                    <div class="project_card fade-in">
+                    <a href="https://user49324809.github.io/cup_store/" target="_blank">
+                        <h3>Магазин чашек</h3>
+                        <p>React</p>
+                    </a>
+                </div>
+                <div class="project_card fade-in">
+                    <a href="https://user49324809.github.io/bike_flowers/" target="_blank">
+                        <h3>Магазин цветов</h3>
+                        <p>React</p>
+                    </a>
+                </div>
+                <div class="project_card fade-in">
+                    <a href="https://user49324809.github.io/wdb/" target="_blank">
+                        <h3>График исторических событий</h3>
+                        <p>React</p>
+                    </a>
+                </div>
+                <div class="project_card fade-in">
+                    <a href="https://user49324809.github.io/wdb/" target="_blank">
+                        <h3>Расписание врачей</h3>
+                        <p>React</p>
+                    </a>
+                </div>
+                <div class="project_card fade-in">
+                    <a href="https://user49324809.github.io/cours/" target="_blank">
+                        <h3>Курсы английского</h3>
+                        <p>JavaScript</p>
+                    </a>
+                </div>
+                <div class="project_card fade-in">
+                    <a href="https://github.com/user49324809/cup_shop" target="_blank">
+                        <h3>Магазин кружек</h3>
+                        <p>PHP</p>
+                    </a>
+                </div>
+                <div class="project_card fade-in">
+                    <a href="https://github.com/user49324809/bicycle/tree/master" target="_blank">
+                        <h3>Магазин велосипедов</h3>
+                        <p>PHP</p>
+                    </a>
+                </div>
             </section>
             <section class="skills__level--actions">
                 HTML - делала макеты и дизайны
@@ -75,9 +90,26 @@
             </section>
         </main>
         <footer class="footer_contacts">
-            Почта: inna6903zakharova@yandex.ru
+            Почта: inna6903zakharova@yandex.ru | 
+            <a href="https://github.com/user49324809" target="_blank">GitHub</a>
         </footer>
     </div>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Наталья Захарова",
+            "url": "https://user49324809.github.io",
+            "sameAs": [
+            "https://github.com/user49324809"
+            ],
+            "jobTitle": "Fullstack разработчик",
+            "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+            }
+        }
+        </script>
     <script src="./script/script.js"></script>
 </body>
 </html>
